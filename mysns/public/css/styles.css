@@ -1,0 +1,301 @@
+/* app.blade.php */
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #555;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul {
+  list-style: inherit;
+}
+
+header {
+  height: 50px;
+  background: #d693fa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.app-logo {
+  font-size: 36px;
+  font-weight: bold;
+  font-family;
+  line-height: 50px;
+  color: #fff;
+}
+
+.app-logo a {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.header-nav ul{
+  display: flex;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.header-nav li {
+  margin-left: 5px;
+}
+
+.header-nav li a {
+  padding: 0 15px;
+  height: 100%;
+  display: inline-block;
+}
+
+.myapp .container {
+  width: 95%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: #d593fa;
+  border-radius: 5px;
+  padding: 0 5px 5px;
+  margin: 30px 0 10px;
+}
+
+.card-header {
+  padding: 7px 5px;
+}
+
+.card-body {
+  color: #d593fa;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#dashboard #link {
+  float: right;
+  color: #d593fa;
+  background: #fff;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#dashboard #link:hover {
+  color: #40c2ff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group:nth-last-of-type(1) {
+  margin: 0;
+}
+
+.form-group button {
+  color: #fff;
+  background: #d593fa;
+  padding: 3px;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login .form-group .btn-link {
+  text-decoration: underline;
+}
+
+#login .form-group .btn-link:hover {
+  color: #40c2ff;
+}
+
+#index .posts {
+  margin: 6px 0 40px;
+}
+
+#index .post {
+  margin-bottom: 10px;
+}
+
+#index .replies {
+  width: 95%;
+  max-width: 550px;
+  float: right;
+  margin-bottom: 20px;
+}
+
+#index .reply {
+  margin-bottom: 10px;
+}
+
+#index .detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 0;
+}
+
+#index .left form {
+  display: flex;
+}
+
+#index .left button {
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+#index .clear {
+  clear: right;
+}
+
+#index .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#index .body {
+  font-size: 18px;
+}
+
+#index .good {
+  font-size: 11px;
+  margin-left: 3px;
+  color: #999;
+}
+
+#index .created {
+  font-size: 14px;
+}
+
+#index .fa-thumbs-up {
+  color: #999;
+  font-size: 18px;
+}
+
+#index .like {
+  color: #36abff;
+}
+
+#index .exist-replies {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #d593fa;
+  text-decoration: underline;
+}
+
+#index .exist-replies:not(:last-of-type) {
+  display: none;
+}
+
+#index .menu {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#index .back {
+  color: #d593fa;
+}
+
+#index .create {
+  color: #45ff48;
+}
+
+#index .auth {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  float: right;
+}
+
+#index .edit .edit-btn {
+  /* display: none; */
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #639fff;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+}
+
+#index .delete .delete-btn {
+  /* display: none; */
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #ff6b61;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+}
+
+.success {
+  color: #5cbf60;
+  background: #ccffce;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+#create h1 {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+#create .body {
+  width: 100%;
+  height: 300px;
+  font-size: 16px;
+  border: 3px solid #d593fa;
+  border-radius: 5px;
+}
+
+#create .btn {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  border: none;
+  float: right;
+  cursor: pointer;
+  color: #d593fa;
+}
+
+#create .hidden {
+  display: none;
+}
+
+#create .error {
+  color: #d45353;
+  background: #ffcfcf;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 5px;
+}
